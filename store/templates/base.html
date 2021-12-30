@@ -13,6 +13,13 @@
   <title>Piano House</title>
 
   <style>
+    .list-meunu li p{
+      color: black;
+    }
+    .footer{
+      border-top: 2px solid black;
+
+    }
     nav {
       background-color: #E39B1F;
     }
@@ -148,17 +155,14 @@ footer .footer-widget h4::after{
               <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="footer-widget">
                   <h4><span>Liên hệ</span></h4>
-                  <ul class="list-menu">
-                    <li>
-                      <p>PIANO HOUSE | Hệ Thống Phân Phối Piano Cao Cấp</p>
-                    </li>
-                  </ul>
+            
+                   
                   <script>var addresses = ["202A Tr\u1ea7n B\u00e1 Giao, P.5, Q. G\u00f2 V\u1ea5p, HCM","60, Ng\u00f5 68 C\u1ea7u Gi\u1ea5y, H\u00e0 N\u1ed9i","Kho H\u00e0ng KCN T\u00e2n B\u00ecnh","C\u00d4NG TY TNHH PIANO HOUSE","T\u00ean vi\u1ebft t\u1eaft : PIANO HOUSE CO., LTD","M\u00e3 s\u1ed1 thu\u1ebf : 0316064899"];</script>
                   <ul class="widget-menu contact-info-page">
                     <li><i class="fa4 fa4-map-marker"></i><a href="https://g.page/pianohousehcm" target="blank">Số 5 đường số 9, phường 10, Quận Gò Vấp (Cityland Park)</a></li>
-                                    <li ng-repeat="address in addresses track by $index" ng-class="{'hide':$index+1>2&&!data.addressShowAll}"><i class="fa4 fa4-map-marker"></i> <span ng-bind="address"></span></li>
-                    <li ng-if="!data.addressShowAll&&addresses.length>2" ng-click="data.addressShowAll=true"><i class="fa4 fa4-map-marker"></i></a></li>
-                                    <li><i class="fa4 fa4-envelope-o"></i> <a href="pianohouse79@gmail.com">pianohouse79@gmail.com</a></li>
+                                    <li ng-repeat="address in addresses track by $index" ng-class="{'hide':$index+1>2&&!data.addressShowAll}"><i class="fa4 fa4-map-marker"></i> <span ng-bind="address">baoquochoang2012@gmail.com</span></li>
+                    <li ng-if="!data.addressShowAll&&addresses.length>2" ng-click="data.addressShowAll=true"> tuanlhgcs200305@fpt.edu.vn</li>
+                                    <li><i class="fa4 fa4-envelope-o"></i> <a>Congnhgcs200767@fpt.edu.vn</a></li>
                     <li><i class="fa4 fa4-phone"></i> <a href="tel://0903049117">0903-XXXXXXX</a></li>
                   </ul>
                 </div>
