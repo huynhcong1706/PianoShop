@@ -60,6 +60,7 @@ footer .footer-widget h4::after{
     margin-top: 15px;
     background-color: rgb(0, 0, 0);
 }
+footer li{color: black;}
   </style>
 </head>
 
@@ -147,9 +148,9 @@ footer .footer-widget h4::after{
         <div class="container">
           <div class="footer-inner padding-bottom-10">
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 logo-footer">
+              <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 logo-footer">
                 <img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-src="https://pianohouse.vn/image/logo-icon-day.png" alt="Piano House " class="img-responsive b-lazy" width="50px">
-              </div>
+              </div> -->
             </div>  
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -162,8 +163,8 @@ footer .footer-widget h4::after{
                     <li><i class="fa4 fa4-map-marker"></i><a href="https://g.page/pianohousehcm" target="blank">Số 5 đường số 9, phường 10, Quận Gò Vấp (Cityland Park)</a></li>
                                     <li ng-repeat="address in addresses track by $index" ng-class="{'hide':$index+1>2&&!data.addressShowAll}"><i class="fa4 fa4-map-marker"></i> <span ng-bind="address">baoquochoang2012@gmail.com</span></li>
                     <li ng-if="!data.addressShowAll&&addresses.length>2" ng-click="data.addressShowAll=true"> tuanlhgcs200305@fpt.edu.vn</li>
-                                    <li><i class="fa4 fa4-envelope-o"></i> <a>Congnhgcs200767@fpt.edu.vn</a></li>
-                    <li><i class="fa4 fa4-phone"></i> <a href="tel://0903049117">0903-XXXXXXX</a></li>
+                                    <li><i class="fa4 fa4-envelope-o"></i> <a>congnhgcs200767@fpt.edu.vn</a></li>
+                    <li><i class="fa4 fa4-phone"></i>0903-XXXXXXX</li>
                   </ul>
                 </div>
               </div>
