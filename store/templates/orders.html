@@ -6,19 +6,19 @@
 {% load custom_filter %}
 <div class="container">
     <div class="border rounded p-4 m-4">
-        <p class="display-4 pl-4 ml-4">Đơn Hàng Của Bạn</p>
+        <p class="display-4 pl-4 ml-4">Your Orders</p>
         <hr>
         <table class="table">
             <thead>
                 <tr>
                     <th>Sno.</th>
-                    <th>Hình Ảnh</th>
-                    <th>Sản Phẩm</th>
-                    <th>Ngày Đặt Hàng</th>
-                    <th>Giá</th>
-                    <th>Số Lượng</th>
-                    <th>Tổng Cộng</th>
-                    <th>Trạng Thái</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,9 +33,9 @@
                     <td>{{order.quantity}}</td>
                     <td>{{order.quantity|multiply:order.price|currency}}</td>
                     {% if order.status %}
-                    <td><small class="badge badge-success">Đã Giao Hàng</small></td>
+                    <td><small class="badge badge-success">Completed</small></td>
                     {%else%}
-                    <td><small class="badge badge-warning">Chưa Giao Hàng</small></td>
+                    <td><small class="badge badge-warning">Pending</small></td>
                     {% endif %}
                 </tr>
 
